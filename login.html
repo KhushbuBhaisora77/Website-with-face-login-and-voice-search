@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+   .bar{
+     margin:0 auto;
+     width:575px;
+     border-radius:30px;
+     border:1px solid #dcdcdc;
+   }
+   .bar:hover{
+     box-shadow: 1px 1px 8px 1px #dcdcdc;
+   }
+   .bar:focus-within{
+     box-shadow: 1px 1px 8px 1px #dcdcdc;
+     outline:none;
+   }
+   #search_bar{
+     height:45px;
+     border:none;
+     width:500px;
+     font-size:16px;
+     outline: none;
+     
+   }
+   #speechtotext{
+     height:20px;
+     position:relative;
+     top:5px;
+     left:10px;
+   }
+   header{
+      background-image:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url("back.png ");
+      background-size:cover;
+      background-position:center;
+      height:800px;
+       }
+.container {
+  padding: 30px 50px;
+}
+button{
+  margin-left: 45pc;
+  background-color:white;
+  width:100px;
+  height:30px;
+}
+ul{
+     float:right;
+    }
+ul li{
+        display:inline-block;
+   }
+ul li a{
+    color:#fff;
+    padding:5px;
+ }
+ul li a:hover{
+   background-color:skyblue;
+   color:yellow;
+   transition:0.6s  ease;
+}
+</style>
+    
+ <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+ 
+</head>
+
+<body>
+<header>
+  <div class="container">
+  <div class="bar">
+    <input id="search_bar" type="text" title="Search" placeholder="">
+    <img id="speechtotext" class="glow" src="mic.png" title="Search by Voice" width="50px"></a>
+    <script src="index.js"></script>
+  </div>
+  <ul>
+    <li><a href="#">HOME </a></li>
+   <li><a href="#">ABOUT </a></li>
+   <li><a href="#">IMAGES </a></li>
+   <li><a href="#">CONTACT </a></li>
+</ul>
+  </div>
+  <button onclick="abc()">verify</button>
+  <center><h1 style="color:white; font-size: 70px; text-shadow: 5px 5px skyblue;">WELCOME</h1></center>
+       
+       <script>
+        function abc(){
+           location.replace('http://localhost/face-login/logg.html')
+        }
+        </script>
+  
+</header>
+
+</body>
+</html>
